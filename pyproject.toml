@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "memory-profiling-in-python"
+version = "0.1.0"
+description = ""
+authors = ["Rain Wu <rain.wu@appier.com>"]
+readme = "README.md"
+packages = [{include = "memory_profiling_in_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+memray = "^1.5.0"
+boto3 = "^1.26.45"
+krb5 = "^0.4.1"
+gssapi = "1.8.2"
+fastapi = "^0.89.0"
+gunicorn = "^20.1.0"
+uvicorn = "^0.20.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
