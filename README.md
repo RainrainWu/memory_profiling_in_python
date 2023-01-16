@@ -10,6 +10,16 @@
 - Abstract layer for memory manipulation (e.g. pymalloc).
 - Extension modules (e.g. C/C++ functions in numpy).
 
+## Prerequisites
+
+- Frames
+- PyMalloc
+
+## Python Frames
+```bash
+$ poetry run python memory_profiling_in_python/01_python_frame.py
+```
+
 ## Inspecting Abstract Layer (PyMalloc)
 
 ### Without PyMalloc Tracking
@@ -85,4 +95,12 @@ $ poetry run python memory_profiling_in_python/10_attach_to_process.py
 
 $ poetry run memray attach ${YOUR_UVICORN_PROCESS_ID}
 
+```
+
+## Context Manager
+
+```bash
+$ poetry run python memory_profiling_in_python/11_context_manager.py
+
+$ poetry run memray summary memray.bin
 ```
