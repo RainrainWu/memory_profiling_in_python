@@ -18,4 +18,4 @@ async def app(scope, receive, send):
 
 if __name__ == "__main__":
 
-    uvicorn.run("memory_profiling_in_python.10_attach_to_process:app")
+    uvicorn.run("memory_profiling_in_python.06_attach_to_process:app")
