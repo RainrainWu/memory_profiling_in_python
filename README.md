@@ -103,5 +103,5 @@ $ poetry run memray attach ${YOUR_UVICORN_PROCESS_ID}
 ```bash
 $ poetry run python memory_profiling_in_python/07_context_manager.py
 
-$ poetry run memray summary memray.bin
+$ poetry run memray summary memray.bin --temporary-allocations
 ```
